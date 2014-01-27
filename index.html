@@ -44,10 +44,14 @@
 <pre><code>Util util = new Util();
 
 //point you want to check if it is within the region
-Ponto pontoOrigem = new Ponto(-22,4837593,-43,4384765753); 
+Ponto pontoOrigem = new Ponto();
+pontoOrigem.setLat("-22,48375933");
+pontoOrigem.setLon("-43,43847633");
 
 // this is center of region
-Ponto x = new Ponto(-22,847359479,-43,483759387);  
+Ponto x = new Ponto();  
+x.setLat("-22,89718623");
+x.setLon("-43,62756356");
 
 // Raio of circle ==4km
 boolean insideRegion = util.isNearPoints(pontoOrigem, x, 4); 
